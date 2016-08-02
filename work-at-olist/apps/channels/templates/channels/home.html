@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+    <title>Work at Olist | Daniel Bastos</title>
+    <style>
+        body { color: #333 ; }
+        ul { margin-left: 20px; }
+        h1 {
+            margin-top: 0;
+            border-top: 5px solid #333;
+            border-bottom: 5px solid #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="row columns">
+    <h1>Work at Olist - Daniel Bastos</h1>
+
+    <h3>Ferramentas utilizadas</h3>
+    <ul>
+        <li>Linux (XUbuntu)</li>
+        <li>Python 3.5.2</li>
+        <li>TDD</li>
+        <li>Vim</li>
+    </ul>
+    <strong>Libs adicionais</strong>
+    <ul>
+        <li>Factory boy (auxilia na criação de dados para teste)</li>
+        <li>White noise (serve arquivos estáticos)</li>
+    </ul>
+
+    <h3>Rodando projeto local</h3>
+    <p>
+        <strong>Configuração inicial</strong>
+        <blockquote>
+            git clone git@github.com:daniellbastos/work-at-olist.git<br>
+            cd work-at-olist/<br>
+            pip install -r requirements-local.txt<br>
+            cd work-at-olist/<br>
+            ./manage.py migrate --settings=workatolist.settings.local
+        </blockquote>
+
+        <strong>Importando dados</strong>
+        <blockquote>
+            ./manage.py importcategories walmart fixtures/categories.csv --settings=workatolist.settings.local
+        </blockquote>
+
+        <strong>Startando o servidor</strong>
+        <blockquote>
+            ./manage.py runserver --settings=workatolist.settings.local
+        </blockquote>
+    </p>
+
+    <h3>API</h3>
+    <ul>
+        <li>
+            Lista dos <i>channels:</i> <a href="/api/channel/" target="_blank">/api/channel/</a>
+        </li>
+        <li>
+            Detalhes do <i>channel</i>: <a href="api/channel/0f6f59dc-7d12-4c67-b7ff-f1190e3165dd/" target="_blank">api/channel/PK/</a>
+        </li>
+        <li>
+        Detalhes da <i>category</i>: <a href="/api/category/9f522a74-85c3-4494-b6ed-f33115354f9a/" target="_blank">/api/category/PK/</a>
+        </li>
+    </ul>
+
+    <h3>Sugestões</h3>
+    <p>
+        Para facilitar o isolamento dos diferentes ambientes em que o projeto
+        pode rodar, recomendaria a criação de um pacote dos arquivos
+        <i>settings</i>. Nesse caso teríamos os seguintes arquivos:
+        <ul>
+            <li>settings/base.py</li>
+            <li>settings/local.py</li>
+            <li>settings/heroku.py</li>
+        </ul>
+    </p>
+
+    <h2>Sobre mim</h2>
+    <p>
+        Comecei a trabalhar com Python/Django em 2011 enquanto trabalhava em
+        agências de marketing digital em Santa Maria/RS.<br>
+        No final 2014 tive minha primeira experiência com home-office, onde
+        trabalhei por 4 meses da Soda Virtual (João Pessoa/PB).<br>
+        No ano seguinte tive a oportunidade de trabalhar da empresa Turbosys
+        (Curitiba/PR), também como home-office, onde trabalhávamos com métodos
+        ágeis e BDD (behaviour-driven development).<br>
+        Em seguida, em junho de 2015 comecei a trabalhar como freelancer para
+        uma startup de Porto Alegre/RS (ainda presto serviços) também em
+        home-office.
+    </p>
+    <p>
+        <a href="https://drive.google.com/open?id=0B5Z7ewovQc7OcmpqWjhVUFdhbnM" target="_blank">
+           <i class="fi-page-doc"></i>  Currículo
+        </a> |
+        <a href="https://www.linkedin.com/pub/daniel-bastos/22/192/635" target="_blank">
+            <i class="fi-social-github"></i> LinkedIn
+        </a> |
+        <a href="https://github.com/daniellbastos" target="_blank">
+            <i class="fi-social-github"></i> GitHub
+        </a>
+    </p>
+    <h3>Eventos</h3>
+    <ul>
+        <li>
+            <strong>2014</strong>
+            <ul>
+                <li>PySM - organizador</li>
+                <li>Trilha de Python no TDC/POA - organizador</li>
+                <li>PyPOA - palestrante</li>
+                <li>Semana acadêmica da Feevale, Novo Hamburgo/RS - palestrante</li>
+            </ul>
+        </li>
+        <li>
+            <strong>2015</strong>
+            <ul>
+                <li>PySM - organizador</li>
+                <li>Trilha de Python no TDC/POA - organizador</li>
+            </ul>
+        </li>
+        <li>
+            <strong>2016</strong>
+            <ul>
+                <li>Semana acadêmica do IFF, Porto Alegre/RS - palestrante</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
