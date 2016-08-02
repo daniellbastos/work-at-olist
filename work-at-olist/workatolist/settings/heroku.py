@@ -1,4 +1,5 @@
 from prettyconf import config
+
 import dj_database_url
 
 from workatolist.settings.base import *
