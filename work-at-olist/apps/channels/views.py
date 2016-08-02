@@ -10,6 +10,9 @@ class ChannelViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Channel.objects.all()
 
     def get_serializer_class(self):
+        """
+        Returns serializer of the list or detail request.
+        """
         pk = self.kwargs.get('pk', None)
         if pk:
             return serializers.ChannelDetailSerializer
